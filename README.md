@@ -10,4 +10,5 @@ Originally Developed by: Mark Srethabhakti 2016
 6/8/2016 Version 1.0.1
 
 -Added mobile friendly responsive form sizing for devices with screen width less than 480px
+
 -Included form stylings through bootstrap.
