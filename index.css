@@ -5,7 +5,9 @@ body {
     font: normal 1.25em Verdana, Arial, sans-serif;
     background-color: #fff;
   	color: #333;
-}
+  	background-image: url('../img/solar-background.jpg')
+  	background-repeat: no-repeat;
+}	
 
 /* Styling the Header */
 
@@ -29,7 +31,14 @@ header {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
-	float: left;
+}
+
+#weightSelector label {
+	width: 95%;
+	padding: 12px 20px;
+	margin: 0 2.5% 0;
+	display: inline-block;
+	box-sizing: border-box;
 }
 
 #planetSelector input[type=text], select{
@@ -40,7 +49,14 @@ header {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
-	float: left;
+}
+
+#planetSelector label {
+	width: 95%;
+	padding: 12px 20px;
+	margin: 0 2.5% 0;
+	display: inline-block;
+	box-sizing: border-box;
 }
 
 /* Button Styling */

@@ -3,7 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mark's Astro-Weight Calculator</title>
+
+
+	<!-- Initializing Bootstrap -->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Custom Style Sheet -->
+
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="responsive.css">
+
+	<!-- Adding mobile responsive functionality -->
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
 
@@ -16,19 +36,20 @@
 
 <!-- Create an input form to accept weight -->
 
-	<section id="weightSelector">
-		<p>Please enter your weight!</p>
+	<div id="weightSelector" class="form-group">
+		<label for = "formGroupInput1">Please enter your weight!</label>
 		<form>
-			<input type="text" name="yourWeight" id="myWeight">
+			<input type="text" name="yourWeight" id="myWeight" placeholder = "Enter your weight in lbs">
 		</form>
-		</section>
+	</div>
 
 <!-- Create an input form to accept a Planet -->
 
-	<section id="planetSelector">
-		<p>Please select your planet!</p>
+	<div id="planetSelector" class="form-group">
+		<label for = "formGroupInput2">Please select your planet!</label>
 		<form>
-			<Select id="planet">
+			<Select id="planet" class = "c-select">
+				<option selected>Select a planet below</option>
 				<option value= "1">Earth</option>
 				<option value= "27.9">Sun</option>
 				<option value= "0.1655">Moon</option>
@@ -42,12 +63,12 @@
 				<option value= "0.06">Pluto</option>
 			</Select>
 		</form>
-	</section>
+	</div>
 
 <!-- Create a submit button. -->
 
 	<div id="button">
-		<button onClick="calculateWeight()" class="button">"Calculate!"</button>
+		<button onClick="calculateWeight()" class="button">Calculate!</button>
 	</div>
 
 <!-- /*Create an output field */ -->

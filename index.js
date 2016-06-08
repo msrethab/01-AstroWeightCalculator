@@ -1,5 +1,5 @@
 
-//declaring and defining function for calculating weight
+//Declaring and defining function for calculating weight
 
 function calculateWeight() {
 
@@ -16,12 +16,26 @@ function calculateWeight() {
 
 	//Outputting an answer
 
-	if(myPlanetSelection === "Sun" || myPlanetSelection === "Moon"){
-		document.getElementById("answer").innerHTML = "If you were on the " + myPlanetSelection + " you would weigh " + myNewWeight + "lbs!"
-		document.getElementById("planetHeader").innerHTML = "Welcome to the " + myPlanetSelection + "!!"
-	} else{
-		document.getElementById("answer").innerHTML = "If you were on " + myPlanetSelection + " you would weigh " + myNewWeight + "lbs!"
-		document.getElementById("planetHeader").innerHTML = "Welcome to " + myPlanetSelection + "!!"
+	//Checking for planet selection and outputting error message if no planet selected
+
+	if(document.getElementById("planet").selectedIndex === 0) {
+		document.getElementById("answer").innerHTML = "Please select a planet";
+
 	}
+
+	//Checking for planet selection and outputting grammatically correct answer statement.
+
+		else if(myPlanetSelection === "Sun" || myPlanetSelection === "Moon"){
+		document.getElementById("answer").innerHTML = "If you were on the " + myPlanetSelection + " you would weigh " + myNewWeight + "lbs!" ;
+		document.getElementById("planetHeader").innerHTML = "Welcome to the " + myPlanetSelection + "!!" ;
+
+	} 	else{
+		document.getElementById("answer").innerHTML = "If you were on " + myPlanetSelection + " you would weigh " + myNewWeight + "lbs!" ;
+		document.getElementById("planetHeader").innerHTML = "Welcome to " + myPlanetSelection + "!!" ;
+
+	}
+
+	// Adding a grey text box when the answer displays
+
 	document.getElementById("answer").style.background = "#ddd" ;
 }
