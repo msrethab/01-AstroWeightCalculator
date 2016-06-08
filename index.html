@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mark's Astro-Weight Calculator</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Create a title banner -->
+
+	<header>
+		<h1>Mark's Astro-Weight Calculator</h1>
+		<h2 id="planetHeader">Welcome to Earth!!</h2>
+	</header>
+
+<!-- Create an input form to accept weight -->
+
+	<section id="weightSelector">
+		<p>Please enter your weight!</p>
+		<form>
+			<input type="text" name="yourWeight" id="myWeight">
+		</form>
+		</section>
+
+<!-- Create an input form to accept a Planet -->
+
+	<section id="planetSelector">
+		<p>Please select your planet!</p>
+		<form>
+			<Select id="planet">
+				<option value= "1">Earth</option>
+				<option value= "27.9">Sun</option>
+				<option value= "0.1655">Moon</option>
+				<option value= "0.377">Mercury</option>
+				<option value= "0.9032">Venus</option>
+				<option value= "0.3895">Mars</option>
+				<option value= "2.640">Jupiter</option>
+				<option value= "1.139">Saturn</option>
+				<option value= "0.917">Uranus</option>
+				<option value= "1.148">Neptune</option>
+				<option value= "0.06">Pluto</option>
+			</Select>
+		</form>
+	</section>
+
+<!-- Create a submit button. -->
+
+	<div id="button">
+		<button onClick="calculateWeight()" class="button">"Calculate!"</button>
+	</div>
+
+<!-- /*Create an output field */ -->
+
+	<p id="answer"></p>
+
+<!-- Create a copyright footer -->
+
+	<footer>
+		  <p>&copy; 2016 Mark Srethabhakti.</p>
+	</footer>
+	<script src="index.js"></script>
+</body>
+</html>
